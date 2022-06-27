@@ -1,0 +1,8 @@
+<h1>Todo App</h1>
+<form method="POST">
+  {% csrf_token %} {{ form.as_p}}
+  <!-- #csrf token is used to handle security on form
+  so your form is not suspectible to hacks #form asp shows waht is on our
+  database -->
+  <input type="submit" value="Submit" />
+</form>

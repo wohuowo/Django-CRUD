@@ -1,0 +1,14 @@
+<ul>
+  <!-- this is the ginger template system -->
+  <!-- this iterates the o -->
+  {% for object in object_list %}
+  <!-- display objects -->
+  <li>{{ object.title }}</li>
+  <li>{{ object.description }}</li>
+
+  <hr />
+  <!-- if the list is empty -->
+  {% empty %}
+  <li>No objects yet.</li>
+  {% endfor %}
+</ul>
